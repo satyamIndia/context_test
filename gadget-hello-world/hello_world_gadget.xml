@@ -29,7 +29,8 @@
 
         <!-- Iterate through the array and display output for each match. -->
         for (var match in matches) {
-          for (var key in matches[match]) {
+          for (var key in matches[match]) { 
+          console.log(key + ” => ” + matches[match][key]);
             listItem = document.createElement('LI');
             extractedText = document.createTextNode(key + ": " + matches[match][key]);
             listItem.appendChild(extractedText);
